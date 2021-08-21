@@ -1,0 +1,130 @@
+:root {
+    --fuente: 'Red Hat Display', sans-serif;
+
+    /* Primary */
+
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--Paleblue);
+    font-family: var(--fuente);
+    font-size: 1.6rem;
+}
+
+@media (min-width: 368px) {
+    .contenedor {
+        display: flex;
+        max-width: 350px;
+        width: 95%;
+        margin: 10% auto;
+        background-color: white;
+        justify-content: center;
+        flex: 0 calc(100% - 1rem);        
+    }
+    img {
+        max-width: 350px;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor {
+        display: flex;
+        max-width: 450px;
+        width: 95%;
+        margin: 10% auto;
+        background-color: white;
+        justify-content: center;
+        flex: 0 calc(100% - 1rem);        
+    }
+    img {
+        max-width: 450px;
+    }
+}
+img {    
+    border-radius: 1rem 1rem 0 0;
+    margin: auto;
+}
+.contenedor {
+    border-radius: 1rem;
+    -webkit-box-shadow: 2px 13px 34px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 2px 13px 34px 0px rgba(0,0,0,0.38);
+    box-shadow: 2px 13px 34px 0px rgba(0,0,0,0.38)
+}
+.contenedor--plan {
+    background-color: var(--Verypaleblue);
+    display: grid;
+    height: 3rem; 
+    grid-template-columns: 0.5fr 1.5fr 1fr;
+    margin: 3rem 5rem;
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+    margin: 2rem 5rem;
+}
+p {
+    text-align: center;
+    margin: 0 5rem 4rem 5rem;
+    color: var(--Desaturatedblue);
+}
+.txt {
+    color: var(--Darkblue);
+    font-weight: bold;
+    margin: 0.3rem 0 0 0.3rem;
+    padding: 0;
+    text-align: left;
+}
+.txt2 {
+    margin: 0.3rem 0 0 0.3rem;
+    padding: 0;
+    text-align: left;
+    font-weight: 500;
+}
+a {
+    margin-top: 10%;
+}
+.btn1 {
+    border: 0;
+    border-radius: 7px;
+    font-weight: 900;
+    background-color: var(--Brightblue);
+    color: var(--Verypaleblue); 
+    margin-left: 10%;
+    margin-top: 5rem;
+    width: 80%;
+    height: 40px;
+}
+.btn1:hover {
+    cursor: pointer;
+}
+.btn2 {
+    border: 0;
+    font-weight: 900;
+    background-color: white;
+    color: var(--Desaturatedblue);
+    width: 80%;
+    margin: 2rem 5rem 3rem 5rem;
+    font-weight: bolder;
+}
+.btn2:hover {
+    cursor: pointer;
+}
